@@ -40,8 +40,11 @@ class Owner
     end 
   end
 
-def sell_pets
-  
+  def sell_pets
+  pet.each do {|dog| dog.mood == "nervous"} && {|cat| cat.mood == "nervous"}
+  end
+  @@all.clear
+end
 
   def list_pets
     num_dogs = dogs.size
