@@ -41,9 +41,9 @@ class Owner
   end
 
   def sell_pets
-    cats.each do {|pet| pet.mood = "nervous"}
-    end
-    pets.clear
+    cats.each do {|cat| cat.mood = "nervous"}
+    elsif
+    dogs.each do {|dog| dog.mood = "nerouvs"}
   end
 
   def list_pets
