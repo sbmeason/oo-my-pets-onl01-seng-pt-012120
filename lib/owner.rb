@@ -41,10 +41,12 @@ class Owner
   end
 
   def sell_pets
-    cats.each do {|cat| cat.mood = "nervous"}
-    elsif
-    dogs.each do {|dog| dog.mood = "nervous"}
-  end
+   my_pets = self.cats + self.dogs
+   my_pets.each do |pets|
+     pets.mood = "nervous"
+    end
+      @owner = nil
+   end
 
   def list_pets
     num_dogs = dogs.size
