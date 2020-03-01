@@ -45,7 +45,7 @@ class Owner
       pets.map {|pet| pet.mood = "nervous"}
     end
     pets.clear
-end
+  end
 
   def list_pets
     num_dogs = dogs.size
