@@ -40,6 +40,8 @@ class Owner
     end 
   end
 
+def sell_pets
+  
 
   def list_pets
     num_dogs = dogs.size
