@@ -41,9 +41,11 @@ class Owner
   end
 
   def sell_pets
-  pet.each do {|dog| dog.mood == "nervous"} && {|cat| cat.mood == "nervous"}
-  end
-  @@all.clear
+    pets.each do |type, pets|
+      pets.map {|pet| pet.mood = "nervous"}
+    end
+    pets.clear
+  endll.clear
 end
 
   def list_pets
